@@ -12,6 +12,7 @@
     --color-bg: #efefef;
     --color-error: rgb(222, 60, 60);
     --color-btn: rgb(22, 126, 107);
+    --color-btn-text: #efefef;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -236,7 +237,7 @@ button {
     font-family:var(--font-stack);
     font-weight:500;
     font-size:1.25rem;
-    color:var(--color-text);
+    color:var(--color-btn-text);
     background: var(--color-btn);
     border-radius:8px;
     border:none;

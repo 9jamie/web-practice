@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | The Odin Project</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+    <div class="signup-content">
+        <div class="panel-left">
+            <div class="logo-img">
+                <img class="logo" src="assets/odin-lined.png"></img>
+                <p class="logo-font">odin</p>
+            </div>
+            <p class="img-credit">Photo by <a class="unsplash-credit" href="https://unsplash.com/photos/a-bunch-of-wood-pieces-sitting-on-top-of-a-pile-of-feathers-oyz9XO4VY6k">Carla Santiago</a> on <a class="unsplash-credit" href="https://unsplash.com">Unsplash</a></p>
+        </div>
+        <div class="panel-right">
+            <div class="signup-intro">
+                <h1>Sign Up Form Exercise</h1>
+                <p class="opening-text">This utilises some basic form validation and fluid design (sans-media queries), as well as a dark theme.<br>
+                    Sign up now to get started.
+                </p>
+                <p class="opening-text">Nothing fancy, but practical!</p>
+            </div>
+            <form>
+                <div class="signup-form">
+                    <h2>Let's do this!</h2>
+                <fieldset>
+                <legend>Sign up form</legend>
+                    <div class="form-unit">
+                        <label for="firstname">First Name</label>
+                        <input class="form-input" type="text" id="firstname" maxlength="48"/>
+                        <span class="error-msg">Please enter a valid first name.</span>
+                    </div>
+                    <div class="form-unit">
+                        <label for="lastname">Last Name (optional)</label>
+                        <input class="form-input" type="text" id="lastname" maxlength="48"/>
+                        <span class="error-msg">Please enter a valid last name.</span>
+                    </div>
+                    <div class="form-unit">
+                        <label for="emailaddress">Email Address</label>
+                        <input class="form-input" type="email" id="emailaddress"/>
+                        <span class="error-msg">Please enter a valid email.</span>
+                    </div>
+                    <div class="form-unit">
+                        <label for="phone">Phone Number</label>
+                        <input class="form-input" type="tel" id="phone" min="3"/>
+                        <span class="error-msg">Please enter a valid email.</span>
+                    </div>
+                    <div class="form-unit">
+                        <label for="password">Password</label>
+                        <input class="form-input" type="password" id="password" minlength="8"/>
+                        <span class="error-msg">Password must be 8 characters.</span>
+                    </div>
+                    <div class="form-unit">
+                        <label for="passwordconfirm">Confirm Password</label>
+                        <input class="form-input" type="password" id="passwordconfirm" minlength="8"/>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="signup-actions">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="/login">Log In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
